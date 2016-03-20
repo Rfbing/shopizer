@@ -1,14 +1,16 @@
 package com.salesmanager.test.core;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.TestContext;
+import org.springframework.test.context.TestContext; 
 import org.springframework.test.context.support.AbstractTestExecutionListener;
 
 import com.salesmanager.core.business.generic.util.EntityManagerUtils;
 
 public class SalesManagerCoreTestExecutionListener extends AbstractTestExecutionListener {
 	
-	@Autowired
+	@Resource
 	private EntityManagerUtils entityManagerUtils;
 	
 	@Override

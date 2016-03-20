@@ -25,7 +25,7 @@ public class CategoryServiceImpl extends SalesManagerEntityServiceImpl<Long, Cat
 	
 	private CategoryDao categoryDao;
 	
-
+ 
 	  
 	  @Autowired
 	  private ProductService productService;

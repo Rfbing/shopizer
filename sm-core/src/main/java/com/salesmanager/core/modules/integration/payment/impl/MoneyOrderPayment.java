@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-
+ 
 import org.apache.commons.lang3.StringUtils;
 
 import com.salesmanager.core.business.customer.model.Customer;
@@ -27,10 +27,10 @@ public class MoneyOrderPayment implements PaymentModule {
 	public void validateModuleConfiguration(
 			IntegrationConfiguration integrationConfiguration,
 			MerchantStore store) throws IntegrationException {
-		
+	 	
 		List<String> errorFields = null;
 		
-		
+		 
 		Map<String,String> keys = integrationConfiguration.getIntegrationKeys();
 		
 		//validate integrationKeys['address']
